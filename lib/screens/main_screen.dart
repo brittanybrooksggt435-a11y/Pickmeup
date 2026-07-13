@@ -71,7 +71,7 @@ class MainScreen extends StatelessWidget {
                     ),
                     _buildMenuCard(
                       context,
-                      icon: Icons.sword,
+                      icon: Icons.shield,
                       label: 'Подземелье',
                       onTap: () => _showComingSoon(context, 'Подземелье'),
                     ),
