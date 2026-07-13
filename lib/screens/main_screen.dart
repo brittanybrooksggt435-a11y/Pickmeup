@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'gacha_screen.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -63,12 +64,12 @@ class MainScreen extends StatelessWidget {
                   mainAxisSpacing: 16,
                   crossAxisSpacing: 16,
                   children: [
-                    _buildMenuCard(
-                      context,
-                      icon: Icons.casino,
-                      label: 'Гача',
-                      onTap: () => _showComingSoon(context, 'Гача'),
-                    ),
+                    onTap: () {
+ 			 Navigator.push(
+   			    context,
+   			    MaterialPageRoute(builder: (context) => const GachaScreen()),
+ 			 );
+		    },
                     _buildMenuCard(
                       context,
                       icon: Icons.shield,
